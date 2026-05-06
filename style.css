@@ -1,0 +1,136 @@
+/* ============ GLOBAL SETTING ============ */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+/* =============== HEADINGS =============== */
+h1 {
+    color: rgb(86, 34, 155);
+}
+
+h2 {
+    color: rgb(1, 57, 1);
+}
+
+/* =============== PARAGRAPH =============== */
+p {
+    background-color: rgb(182, 180, 180);
+    padding: 5px;
+    color: #520101;
+}
+
+table {
+    margin: 5px 0;
+    /* 5px → top and bottom margin; 0 → left and right margin */
+    padding: 6px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* ================= NAVBAR ================= */
+ul {
+    display: flex;
+    /* Horizontal layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+li:last-child {
+    border-right: none;
+    margin-left: auto;
+    /* pushes login to right */
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* ============== LOGIN ICON ============== */
+.login-user {
+    height: 1em;
+    /* Makes icon same size as text */
+    margin-right: 0.5em;
+
+}
+
+/* LIST COLORS (Targets specific list items)  */
+
+li:nth-child(1) {
+    color: rgb(2, 2, 67);
+}
+
+li:nth-child(2) {
+    color: rgb(2, 68, 2);
+}
+
+/* =============== SECTIONS =============== */
+section {
+    margin-bottom: 30px;
+}
+
+section p:first-of-type {
+    background: lightgreen;
+}
+
+/* ============= FORM STYLING ============= */
+input,
+select {
+    margin: 5px 0;
+    /* 5px → top and bottom margin; 0 → left and right margin */
+    padding: 6px;
+    font-size: 14px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #380202;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* ============= BUTTONS ============= */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding: 8px 12px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background: #f2f2f2;
+}

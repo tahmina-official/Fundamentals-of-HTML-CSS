@@ -1,0 +1,443 @@
+<!DOCTYPE html> <!-- tells the browser this is HTML5 -->
+<html> <!-- root of your webpage -->
+
+<head> <!-- This part is not visible on the page. It configures your site. -->
+    <meta charset="utf-8"> <!-- Supports all characters -->
+    <meta name="description" content="Fundamentals of HTML and CSS"> <!-- Helps SEO -->
+    <title>Fundamentals-of-HTML-CSS</title> <!-- Shows in browser tab -->
+    <link rel="stylesheet" href="./style.css"> <!-- Connects your CSS file -->
+
+    <style>
+        .wave {
+            display: inline-block;
+            transform-origin: 70% 70%;
+            /* natural wave ratio */
+            animation: wave-animation 2s infinite;
+        }
+
+        /* Defines how the hand rotates over time */
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            15% {
+                transform: rotate(14deg);
+            }
+
+            30% {
+                transform: rotate(-8deg);
+            }
+
+            40% {
+                transform: rotate(14deg);
+            }
+
+            50% {
+                transform: rotate(-4deg);
+            }
+
+            60% {
+                transform: rotate(10deg);
+            }
+
+            70% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body> <!-- This part is visible on the page -->
+
+    <!-- ================= HEADER ================= -->
+    <header style="border: 3px solid black; padding: 10px">
+        <!-- header contains Title (h1), Navigation (nav) & <span> is inline -->
+        <h1>Hi, I'm Tahmina Akter <span class="wave">👋</span></h1>
+        <nav aria-label="Primary navigation"> <!-- (SEO + accessibility) -->
+            <ul>
+                <li><a class="active" href="./index.html" target="_self" title="Landing page">Home</a></li>
+                <li><a href="./resume/resume.html" target="_blank" title="Online Resume">Resume</a></li>
+                <li><a href="./resources.html" target="_self" title="Practice Coding">Resources</a></li>
+                <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">Wireframe</a>
+                </li>
+                <li><a href="./login/login.html" target="_self" title="Login Page"><img src="./media/images/login.png"
+                            alt="Login Icon" class="login-user" />Log In </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main> <!-- Main content (good for SEO + accessibility) -->
+
+        <!-- ================= INTRO ================= -->
+        <p>
+            Welcome to my personal web page.
+            I am learning <strong>HTML</strong> step by step.
+            This page is my first mini project.
+        </p>
+
+        <hr>
+
+        <!-- ================= LINKS ================= -->
+        <section>
+            <h2>My Links</h2>
+            <p>
+                Visit my favorite website:
+                <a href="https://www.google.com">Google</a>
+            </p>
+            <p>
+                Email
+                <a href="mailto:tahmina.usa24@gmail.com">Send me an email!</a>
+            </p>
+            <p>
+                Call
+                <a href="tel:+13474076781">Give me a call</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ================= SKILLS ================= -->
+        <section>
+            <h2>HTML formatting tags</h2>
+            <b>This text is bold.</b><br>
+            <i>This text is italic.</i><br>
+            <strong>This text is important!</strong><br>
+            <em>This text is emphasized.</em><br>
+            This text is <mark>highlighted</mark>.<br>
+            <small>This text is small.</small><br>
+            <del>This text is deleted.</del><br>
+            <ins>This text is inserted.</ins><br>
+            This text is <sup>superscripted</sup>.<br>
+            This text is <sub>subscripted</sub>.<br>
+        </section>
+
+        <hr>
+
+        <!-- ================= INLINE EXAMPLES ================= -->
+        <section>
+            <h2>Inline Elements Example</h2>
+            <p>
+                I can write <b>bold text</b>, <em>italic text</em>,
+                and use <span>span elements</span>.
+            </p>
+
+            <p>
+                Inline example: <span>span text</span>,
+                <abbr title="HyperText Markup Language">HTML</abbr>,
+                <q>quote text</q>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ================= WHITESPACE ================= -->
+        <section>
+            <h2>Whitespace Example</h2>
+            <p>
+                HTML ignores extra spaces.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ================= LINE BREAK ================= -->
+        <section>
+            <h2>Line Break Example</h2>
+            <p>
+                Line one<br>
+                Line two<br>
+                Line three
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- ================= MEDIA ================= -->
+        <section>
+            <h2>Media Section</h2>
+
+            <img src="./media/images/pic1.png" alt="An image description" width="560px" height="315px">
+
+            <br><br>
+
+            <video width="560px" height="315px" controls>
+                <source src="./media/vedio/vedio.mp4" type="video/mp4">
+                <!-- <track src="subtitle.vtt" kind="subtitles" srclang="en" label="English"> -->
+            </video>
+
+            <br><br>
+
+            <iframe width="560px" height="315px" src="https://www.youtube.com/embed/kUMe1FH4CHE"
+                title="YouTube video player" frameborder="0" allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <hr>
+
+        <!-- ================= LISTS ================= -->
+        <section>
+            <h2>Lists Example</h2>
+
+            <ul style="display: block; background-color: aliceblue">
+                <li>Apple</li>
+                <li>Banana</li>
+            </ul>
+
+            <ol>
+                <li>Step One</li>
+                <li>Step Two</li>
+            </ol>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Markup Language</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <!-- ================= FORM ================= -->
+        <section>
+            <h2>Create Account - Input Types (Level Practice)</h2>
+
+            <form action="#">
+
+                <!-- ================= LEVEL 1 ================= -->
+                <h3>⭐ Level 1: Basic Text Inputs</h3>
+
+                <label>First Name:</label>
+                <input type="text" placeholder="First Name" required><br>
+
+                <label>Last Name:</label>
+                <input type="text" placeholder="Last Name" required><br>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Email"><br>
+
+                <label>Password:</label>
+                <input type="password" placeholder="Password"><br>
+
+
+                <!-- ================= LEVEL 2 ================= -->
+                <h3>🔥 Level 2: Smart Inputs</h3>
+
+                <label>Phone:</label>
+                <input type="tel" placeholder="Phone Number"><br>
+
+                <label>Website:</label>
+                <input type="url" placeholder="Website URL"><br>
+
+                <label>Search:</label>
+                <input type="search" placeholder="Search here"><br>
+
+                <label>Number:</label>
+                <input type="number"><br>
+
+                <label>Range:</label>
+                <input type="range"><br>
+
+                <label>Color:</label>
+                <input type="color"><br>
+
+
+                <!-- ================= LEVEL 3 ================= -->
+                <h3>🚀 Level 3: Date & Advanced Inputs</h3>
+
+                <label>Date:</label>
+                <input type="date"><br>
+
+                <label>Time:</label>
+                <input type="time"><br>
+
+                <label>Datetime Local:</label>
+                <input type="datetime-local"><br>
+
+                <label>Month:</label>
+                <input type="month"><br>
+
+                <label>Week:</label>
+                <input type="week"><br>
+
+                <label>File Upload:</label>
+                <input type="file"><br>
+
+
+                <!-- ================= LEVEL 4 ================= -->
+                <h3>🎯 Level 4: Controls & Actions</h3>
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habits</legend>
+
+                    <label>
+                        <input type="checkbox" name="habits" value="sports">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="habits" value="eating">
+                        Eating
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="habits" value="sleeping">
+                        Sleeping
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="habits" value="reading">
+                        Reading
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Country Selection</legend>
+
+                    <!-- id → used for label + JavaScript; name → used when submitting form data to a server; Use for="id" → most common and clean -->
+                    <label for="country">Choose your country:</label>
+                    <select id="country" name="country">
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="usa" selected>USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                        <option value="india">India</option>
+                    </select>
+                </fieldset>
+
+                <input type="button" value="Click Me">
+                <input type="reset">
+                <input type="submit">
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- ================= TABLE ================= -->
+        <section>
+            <h2>Table Example</h2>
+
+            <table border="5">
+                <caption>Calculator</caption>
+                <thead>
+                    <tr>
+                        <th colspan="4" style="text-align: right;">0.00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>c</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>/</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>*</td>
+                    </tr>
+
+                    <tr>
+                        <td>0</td>
+                        <td>00</td>
+                        <td>.</td>
+                        <td>+</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">=</td>
+                        <td>-</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- ================= EXTRA ELEMENTS ================= -->
+        <section>
+            <h1>Lorem ipsum</h1>
+            <h2>dolor sit amet,</h2>
+            <h3>consectetur adipisicing elit.<h3>
+                    <h4>Doloribus explicabo<h4>
+                            <h5>incidunt magnam magni<h5>
+                                    <h6>nobis pariatur quia,<h6>
+
+                                            <p>H<sub>2</sub>O and X<sup>2</sup></p>
+
+                                            <pre>Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit.
+Doloribus explicabo incidunt magnam magni nobis
+                pariatur quia, rerum sint tempora vero.
+            </pre>
+
+                                            <code>console.log("Hello")</code>
+
+                                            <br>
+
+                                            <kbd>Ctrl + C</kbd> what user types
+
+                                            <br>
+
+                                            <samp>Output - what computer shows back</samp>
+
+                                            <bdo dir="rtl">Reverse text</bdo>
+
+                                            <noscript>This website works best with JavaScript enabled.</noscript>
+        </section>
+
+        <hr>
+
+        <!-- DETAILS FIXED -->
+        <details>
+            <summary>Summary for the details</summary>
+            <p>This is hidden content that can be expanded.</p>
+        </details>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Tahmina Akter. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+</html>

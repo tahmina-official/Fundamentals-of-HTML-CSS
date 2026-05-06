@@ -1,0 +1,93 @@
+/* ================= NAVBAR ================= */
+ul {
+    display: flex;
+    /* Horizontal layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+li:last-child {
+    border-right: none;
+    margin-left: auto;
+    /* pushes login to right */
+}
+
+li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* ============== LOGIN ICON ============== */
+.login-user {
+    height: 1em;
+    /* Makes icon same size as text */
+    margin-right: 0.5em;
+
+}
+
+body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f9;
+
+    }
+
+    table {
+        width: 85%;
+        margin: auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    thead {
+        background: #2c3e50;
+        color: white;
+    }
+
+    th, td {
+        padding: 14px 18px;
+        text-align: left;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #eee;
+        transition: 0.2s;
+    }
+
+    tbody tr:nth-child(even) {
+        background: #fafafa;
+    }
+
+    tbody tr:hover {
+        background: #f1f7ff;
+    }
+
+    /* Button-style links */
+    a {
+        text-decoration: none;
+        background: #3498db;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    a:hover {
+        background: #217dbb;
+    }

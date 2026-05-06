@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main> <!-- Main content (good for SEO + accessibility) -->
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <!-- header contains Title (h1), Navigation (nav) & <span> is inline → used to style small parts -->
+      <nav>
+        <ul>
+          <li><a class="active" href="../index.html" target="_self" title="Landing page">Home</a></li>
+          <li><a href="../resume/resume.html" target="_blank" title="Online Resume">Resume</a></li>
+          <li><a href="../resources.html" target="_self" title="Practice Coding">Resources</a></li>
+          <!-- <li><a href="./testimonials/testimonials.html" target="_self" title="Testimonials">Testimonials</a></li> -->
+          <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer"
+              title="Landing Page Wireframe">Wireframe</a>
+          </li>
+          <!-- <li><a href="./comic-book/comic-book.html" target="_self" title="Comic Book">Comic Book</a></li>
+                <li><a href="./css-properties/index.html" target="_self" title="CSS Properties">CSS Properties</a>
+                </li> -->
+          <li><a href="../login/login.html" target="_self" title="Login Page"><img src="../media/images/login.png"
+                alt="Login Icon" class="login-user" />Log In </a>
+          </li>
+        </ul>
+
+
+      </nav>
+    </header>
+
+    <div id="register-card">
+      <section class="register-card">
+        <h2>Create Account</h2>
+
+        <form>
+
+          <input type="text" placeholder="Enter Your First Name" required>
+
+          <input type="text" placeholder="Enter Your Last Name" required>
+
+          <input type="email" placeholder="Email" required>
+
+          <input type="password" placeholder="Password" required>
+
+          <input type="password" placeholder="Confirm Password" required>
+
+          <button type="submit">Register</button>
+        </form>
+
+        <div class="links">
+          <p>Already have an account? <a href="../login/login.html">Login</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

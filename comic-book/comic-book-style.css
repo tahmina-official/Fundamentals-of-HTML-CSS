@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+#comic {
+    display: flex-column;
+    border: 3px solid black;
+    width: 600px;
+    background-color: burlywood;
+}
+
+h1 {
+    border: 2px solid rgb(12, 171, 12);
+    background-color: rgb(233, 155, 21);
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid blue;
+    height: 190px;
+}
+
+/* .row>div:last-child{
+    margin-right: 20px;
+} */
+
+.panel {
+    background-color: blueviolet;
+    border: 1px solid orange;
+    height: 190px;
+    width: 190px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /* IMPORTANT */
+
+}
+
+/* Row 1 */
+#row-1 .panel:nth-child(1) {
+    background-image: url("../media/images/pikachu1.gif");
+}
+
+#row-1 .panel:nth-child(2) {
+    background-image: url("../media/images/pikachu2.gif");
+}
+
+#row-1 .panel:nth-child(3) {
+    background-image: url("../media/images/pikachu3.gif");
+}
+
+/* Row 2 */
+#row-2 .panel:nth-child(1) {
+    background-image: url("../media/images/pikachu4.gif");
+}
+
+#row-2 .panel:nth-child(2) {
+    background-image: url("../media/images/pikachu5.gif");
+}
+
+#row-2 .panel:nth-child(3) {
+    background-image: url("../media/images/pikachu6.gif");
+}
+
+.dialogue {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    border: 5px solid rgb(83, 3, 83);
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.935);
+    padding: 2px 4px;
+    border-radius: 5px;
+    max-width: 100px;
+
+}

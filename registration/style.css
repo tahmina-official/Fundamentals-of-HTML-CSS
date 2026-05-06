@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+}
+
+#register-card {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 340px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-table;
+} */
+
+button {
+    width: 365px;
+    padding: 12px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+.links {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.links a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+/* ================= NAVBAR ================= */
+ul {
+    display: flex;
+    /* Horizontal layout */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+}
+
+li:last-child {
+    border-right: none;
+    margin-left: auto;
+    /* pushes login to right */
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* ================= LOGIN ICON ================= */
+.login-user {
+    height: 1em;
+    /* Makes icon same size as text */
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
