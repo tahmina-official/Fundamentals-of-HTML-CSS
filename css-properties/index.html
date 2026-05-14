@@ -1,67 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Styled Table</title>
-<link rel="stylesheet" href="./style.css">
+<!DOCTYPE html> <!-- tells the browser this is HTML5 -->
+<html> <!-- root of your webpage -->
+
+<head> <!-- This part is not visible on the page. It configures your site. -->
+    <meta charset="utf-8"> <!-- Supports all characters -->
+    <meta name="description" content="Fundamentals of HTML and CSS"> <!-- Helps SEO -->
+    <title>Fundamentals-of-HTML-CSS</title> <!-- Shows in browser tab -->
+    <link rel="icon" href="../media/images/favicon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="./style.css"> <!-- Connects your CSS file -->
 </head>
 
 <body>
-<br><br><br><br><br><br><br><br><br><br>
-<table>
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Concept</th>
-            <th>Explanation</th>
-            <th>Page</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Inline-Block</td>
-            <td>Elements stay inline but accept width & height</td>
-            <td><a href="./display/inline-block.html">Open</a></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Block</td>
-            <td>Takes full width and starts on a new line</td>
-            <td><a href="./display/block.html">Open</a></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Relative</td>
-            <td>Moves relative to its normal position</td>
-            <td><a href="./position/relative.html">Open</a></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Fixed</td>
-            <td>Stays fixed relative to viewport</td>
-            <td><a href="./position/fixed.html">Open</a></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Absolute</td>
-            <td>Positioned relative to nearest positioned parent</td>
-            <td><a href="./position/absolute.html">Open</a></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Flex</td>
-            <td>Modern layout system for alignment</td>
-            <td><a href="./display/flex.html">Open</a></td>
-        </tr>
-    </tbody>
-</table>
+    <br><br><br><br><br><br><br><br><br><br>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Concept</th>
+                        <th>Explanation</th>
+                        <th>Page</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Inline-Block</td>
+                        <td>Elements stay inline but accept width & height</td>
+                        <td><a href="./display/inline-block.html">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Block</td>
+                        <td>Takes full width and starts on a new line</td>
+                        <td><a href="./display/block.html">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Relative</td>
+                        <td>Moves relative to its normal position</td>
+                        <td><a href="./position/relative.html">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Fixed</td>
+                        <td>Stays fixed relative to viewport</td>
+                        <td><a href="./position/fixed.html">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Absolute</td>
+                        <td>Positioned relative to nearest positioned parent</td>
+                        <td><a href="./position/absolute.html">Open</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Flex</td>
+                        <td>Modern layout system for alignment</td>
+                        <td><a href="./display/flex.html">Open</a></td>
+                    </tr>
+                </tbody>
+            </table>
 
-<!-- ================= FOOTER ================= -->
+            <a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; 
+    transition: 0.2s" class="active" href="../resources.html" target="_self" title="Sample Testimonials">Back</a>
+        </section>
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
         <p style="text-align: center;">© 2026 Tahmina Akter. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>

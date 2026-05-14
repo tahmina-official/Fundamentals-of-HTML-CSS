@@ -1,57 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- tells the browser this is HTML5 -->
+<html> <!-- root of your webpage -->
 
-<head>
-    <meta charset="UTF-8">
-    <title>Resources</title>
-    <link rel="stylesheet" href="./style.css">
+<head> <!-- This part is not visible on the page. It configures your site. -->
+    <meta charset="utf-8"> <!-- Supports all characters -->
+    <meta name="description" content="Fundamentals of HTML and CSS"> <!-- Helps SEO -->
+    <title>Fundamentals-of-HTML-CSS</title> <!-- Shows in browser tab -->
+    <link rel="icon" href="./media/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css"> <!-- Connects your CSS file -->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-         /* Button-style links */
-    a {
-        text-decoration: none;
-        background: #3498db;
-        color: white;
-        padding: 6px 12px;
-        border-radius: 6px;
-        font-size: 14px;
-        transition: 0.2s;
-    }
 
-    a:hover {
-        background: #217dbb;
-    }
+     <style>
+        .wave {
+            display: inline-block;
+            transform-origin: 70% 70%;
+            /* natural wave ratio */
+            animation: wave-animation 2s infinite;
+        }
+
+        /* Defines how the hand rotates over time */
+        @keyframes wave-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            15% {
+                transform: rotate(14deg);
+            }
+
+            30% {
+                transform: rotate(-8deg);
+            }
+
+            40% {
+                transform: rotate(14deg);
+            }
+
+            50% {
+                transform: rotate(-4deg);
+            }
+
+            60% {
+                transform: rotate(10deg);
+            }
+
+            70% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <!-- ================= HEADER ================= -->
+    <header style="border: 3px solid black; padding: 10px">
+        <!-- header contains Title (h1), Navigation (nav) & <span> is inline -->
+        <h1>Hi, I'm Tahmina Akter <span class="wave">👋</span></h1>
+        <nav aria-label="Primary navigation"> <!-- (SEO + accessibility) -->
+            <ul>
+                <li><a class="active" href="./index.html" target="_self" title="Landing page">Home</a></li>
+                <li><a href="./resources.html" target="_self" title="Practice Coding">Resources</a></li>
+                <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">Wireframe</a>
+                </li>
+                <li><a href="https://github.com/tahmina-official" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">GitHub Profile</a>
+                </li>
+                <li><a href="./login/login.html" target="_self" title="Login Page"><img src="./media/images/login.png"
+                            alt="Login Icon" class="login-user" />Log In </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="container mt-4">
-        <div class="row">
 
-            <article class="col-md-4 card-box">
-                <h3>Testimonials</h3>
-                <p><a class="active" href="./testimonials/testimonials.html" target="_blank"
-                        title="Sample Testimonials">Click Here</a></p>
-            </article>
+    <br><br><br><br><br><br>
 
-            <article class="col-md-4 card-box">
-                <h3>Comic Book</h3>
-                <p><a class="active" href="./comic-book/comic-book.html" target="_blank" title="Create a Joke">Click
-                        Here</a></p>
-            </article>
+    <main>
 
-            <article class="col-md-4 card-box">
-                <h3>CSS Properties</h3>
-                <p><a class="active" href="./css-properties/index.html" target="_blank" title="Sample Testimonials">Click
-                        Here</a></p>
-            </article>
+        <section class="container mt-4">
+            <div class="row">
 
-        </div>
-    </section>
+                <article class="col-md-4 card-box">
+                    <h3>Testimonials</h3>
+                    <p><a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; transition: 0.2s" class="active" href="./testimonials/testimonials.html" target="_self"
+                            title="Sample Testimonials">Click Here</a></p>
+                </article>
+
+                <article class="col-md-4 card-box">
+                    <h3>Comic Book</h3>
+                    <p><a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; transition: 0.2s" class="active" href="./comic-book/comic-book.html" target="_self" title="Create a Joke">Click
+                            Here</a></p>
+                </article>
+
+                <article class="col-md-4 card-box">
+                    <h3>CSS Properties</h3>
+                    <p><a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; transition: 0.2s" class="active" href="./css-properties/index.html" target="_self"
+                            title="Sample Testimonials">Click
+                            Here</a></p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Tahmina Akter. All rights reserved.</p>
+    </footer>
 
 </body>
 
