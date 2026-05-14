@@ -16,10 +16,18 @@ It was created to practice core web development concepts and basic UI structurin
 
 - Multi-page website:
   - Home
-  - Login
-  - Resume
-  - Registration
-  - Testimonials
+  - Resources
+    - Testimonials
+    - Comic Book
+    - CSS Properties
+      - Inline-Block
+      - Block
+      - Relative
+      - Fixed
+      - Absolute
+      - Flex
+  - Wireframe
+  - GitHub Profile
 - Basic HTML elements (headings, paragraphs, lists, tables)
 - Forms with multiple input types
 - Images, video embedding, and YouTube integration
