@@ -1,53 +1,276 @@
+/* =========================
+   GLOBAL RESET
+   Removes default browser spacing
+   and applies consistent box sizing
+========================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   BODY / BASE LAYOUT
+   Sets font, full height layout,
+   and light background color
+========================= */
 body {
-        font-family: Arial, sans-serif;
-        background: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+}
 
+/* Main content takes available space
+   to keep footer at bottom */
+main {
+    flex: 1;
+    padding: 15px;
+}
+
+section {
+    padding: 15px;
+}
+
+/* =========================
+   HEADING STYLES
+========================= */
+h1 {
+    color: rgb(86, 34, 155);
+    /* Purple heading */
+}
+
+h2 {
+    color: rgb(1, 57, 1);
+    /* Dark green heading */
+}
+
+/* =========================
+   PARAGRAPH STYLING
+========================= */
+p {
+    background-color: rgb(182, 180, 180);
+    margin: 10px;
+    padding: 8px;
+    color: #520101;
+    border-radius: 4px;
+}
+
+/* =========================
+   TABLE STYLING
+========================= */
+table {
+    margin: 10px 0;
+    padding: 6px;
+    font-size: clamp(14px, 2.5vw, 30px);
+    /* (max, responsive, min) Responsive font size */
+    text-align: center;
+    width: 100%;
+    /* responsive */
+}
+
+
+thead {
+    background: #2c3e50;
+    color: white;
+}
+
+th,
+td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tbody tr:hover {
+    background: #f1f7ff;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+ul {
+    display: flex;
+    /* menu will be placed horizontally */
+    flex-wrap: wrap;
+    /* When there is not enough space, the items will wrap onto the next line. */
+    list-style: none;
+    /* Removes bullet points */
+    background-color: #333;
+}
+
+/* Pushes last menu item to right */
+li:last-child {
+    margin-left: auto;
+}
+
+/* Navigation links styling */
+li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Hover effect for menu links */
+li a:hover {
+    background-color: #111;
+}
+
+/* Active/current page link */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Login user icon styling ; login icon size same as text*/
+.login-user {
+    height: 1em;
+    margin-right: 0.5em;
+}
+
+/* =========================
+   RESPONSIVE FORM ELEMENTS
+========================= */
+input,
+select {
+    width: 100%;
+    max-width: 400px;
+    margin: 6px 0;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Group form fields */
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #05af55;
+}
+
+/* Fieldset title */
+legend {
+    font-weight: bold;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+}
+
+/* Button styling */
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding: 10px 14px;
+    margin: 5px 3px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #b00404;
+    color: #fff;
+    border: none;
+}
+
+/* =========================
+   CUSTOM BUTTON LINK
+========================= */
+.custom-btn {
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover effect for custom button */
+.custom-btn:hover {
+    background: #1d6fa5;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+.card-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Card lift effect on hover */
+.card-box:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    margin-top: auto;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablet and mobile screens */
+@media (max-width: 768px) {
+
+    /* Stack navbar vertically */
+    ul {
+        flex-direction: column;
     }
 
-    table {
-        width: 85%;
-        margin: auto;
-        border-collapse: collapse;
-        background: white;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-        border-radius: 10px;
-        overflow: hidden;
+    /* Reset last item alignment */
+    li:last-child {
+        margin-left: 0;
     }
 
-    thead {
-        background: #2c3e50;
-        color: white;
+    /* Full width form inputs */
+    input,
+    select {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+
+    /* Reduce main padding */
+    main {
+        padding: 10px;
     }
 
-    th, td {
-        padding: 14px 18px;
-        text-align: left;
+    /* Smaller card padding */
+    .card-box {
+        padding: 15px;
     }
 
-    tbody tr {
-        border-bottom: 1px solid #eee;
-        transition: 0.2s;
+    /* Compact navigation links */
+    li a {
+        padding: 12px;
     }
-
-    tbody tr:nth-child(even) {
-        background: #fafafa;
-    }
-
-    tbody tr:hover {
-        background: #f1f7ff;
-    }
-
-    /* Button-style links */
-    a {
-        text-decoration: none;
-        background: #3498db;
-        color: white;
-        padding: 6px 12px;
-        border-radius: 6px;
-        font-size: 14px;
-        transition: 0.2s;
-    }
-
-    a:hover {
-        background: #217dbb;
-    }
+}

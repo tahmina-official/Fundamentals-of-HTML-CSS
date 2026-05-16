@@ -13,44 +13,24 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Wave animation -->
-    <style>
-        .wave {
-            display: inline-block;
-            transform-origin: 70% 70%;
-            animation: wave-animation 2s infinite;
-        }
-
-        @keyframes wave-animation {
-            0% { transform: rotate(0deg); }
-            15% { transform: rotate(14deg); }
-            30% { transform: rotate(-8deg); }
-            40% { transform: rotate(14deg); }
-            50% { transform: rotate(-4deg); }
-            60% { transform: rotate(10deg); }
-            100% { transform: rotate(0deg); }
-        }
-    </style>
 </head>
 
 <body>
 
     <!-- ================= HEADER ================= -->
-    <header style="border: 3px solid black; padding: 10px">
-        <h1>Hi, I'm Tahmina Akter <span class="wave">👋</span></h1>
-
+    <header>
         <nav aria-label="Primary navigation">
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a class="active" href="./resources.html">Resources</a></li>
-                <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer">Wireframe</a></li>
-                <li><a href="https://github.com/tahmina-official" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li>
-                    <a href="./login/login.html">
-                        <img src="./media/images/login.png" alt="Login Icon" class="login-user">
-                        Log In
-                    </a>
+                <li><a href="./index.html" target="_self" title="Landing page">Home</a></li>
+                <li><a class="active" href="./resources.html" target="_self" title="Practice Coding">Resources</a></li>
+                <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">Wireframe</a>
+                </li>
+                <li><a href="https://github.com/tahmina-official" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">GitHub Profile</a>
+                </li>
+                <li><a href="./login/login.html" target="_self" title="Login Page"><img src="./media/images/login.png"
+                            alt="Login Icon" class="login-user" />Log In </a>
                 </li>
             </ul>
         </nav>

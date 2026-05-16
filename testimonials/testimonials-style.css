@@ -16,7 +16,7 @@ body {
 /* GRID */
 .container {
     display: grid; /* 2D layout system */
-    grid-template-columns: repeat(4, 1fr); /* 4 equal columns & each column takes one fraction of the available space */
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns & each column takes one fraction (single column) of the available space */
     gap: 20px; /* spacing between cards */
     max-width: 1100px; /* Limits layout width → prevents stretching on big screens */
     align-items: stretch; /* Makes all cards same height in a row */
@@ -38,15 +38,13 @@ body {
 
 .card p {
     font-size: 13px;
-    opacity: 0.7;
-    /* softer text */
+    opacity: 0.7; /* softer text */
     line-height: 1.5;
 }
 
 /* USER */
 .user {
-    display: flex;
-    /* puts image + text side-by-side */
+    display: flex; /* puts image + text side-by-side */
     align-items: center;
     gap: 10px;
 }
@@ -71,8 +69,6 @@ body {
 .card-purple {
     background: #733fc8;
     color: white;
-    grid-column: span 2;
-    /* takes 2 columns */
 }
 
 .card-dark {
@@ -83,35 +79,52 @@ body {
 .card-light {
     background: white;
     color: #333;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    /* [x-offset] [y-offset] [blur] [color]; */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* [x-offset] [y-offset] [blur] [color]; */
 }
 
 /* SIZES */
 .tall {
-    grid-row: span 2;
-    /* takes 2 row */
+    grid-row: span 2; /* takes 2 row */
 }
 
-/* .card-light .user img {
-    border: 2px solid #ddd;
-} */
+.card-light .user img {
+    border: 2px solid #0f0101;
+}
 
 .wide {
     grid-column: span 2;
 }
 
+/* =========================
+   CUSTOM BUTTON LINK
+========================= */
+.custom-btn {
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover effect for custom button */
+.custom-btn:hover {
+    background: #1d6fa5;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
     .container {
-        grid-template-columns: 1fr 1fr;
-        /* → switches to 2 columns */
+        grid-template-columns: 1fr 1fr; /* → switches to 2 columns */
     }
 }
 
 @media (max-width: 375px) {
     .container {
-        grid-template-columns: 1fr;
-        /* → single column*/
+        grid-template-columns: 1fr; /* → single column*/
     }
 }

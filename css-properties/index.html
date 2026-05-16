@@ -10,8 +10,27 @@
     <link rel="stylesheet" href="./style.css"> <!-- Connects your CSS file -->
 </head>
 
-<body>
-    <br><br><br><br><br><br><br><br><br><br>
+<body> <!-- This part is visible on the page -->
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav aria-label="Primary navigation"> <!-- (SEO + accessibility) -->
+            <ul>
+                <li><a class="active" href="../index.html" target="_self" title="Landing page">Home</a></li>
+                <li><a href="../resources.html" target="_self" title="Practice Coding">Resources</a></li>
+                <li><a href="https://wireframe.cc/D2swz4" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">Wireframe</a>
+                </li>
+                <li><a href="https://github.com/tahmina-official" target="_blank" rel="noopener noreferrer"
+                        title="Landing Page Wireframe">GitHub Profile</a>
+                </li>
+                <li><a href="../login/login.html" target="_self" title="Login Page"><img src="../media/images/login.png"
+                            alt="Login Icon" class="login-user" />Log In </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section>
             <table>
@@ -28,51 +47,49 @@
                         <td>1</td>
                         <td>Inline-Block</td>
                         <td>Elements stay inline but accept width & height</td>
-                        <td><a href="./display/inline-block.html">Open</a></td>
+                        <td><a class="custom-btn" href="./display/inline-block.html">Open</a></td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>Block</td>
                         <td>Takes full width and starts on a new line</td>
-                        <td><a href="./display/block.html">Open</a></td>
+                        <td><a class="custom-btn" href="./display/block.html">Open</a></td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>Relative</td>
                         <td>Moves relative to its normal position</td>
-                        <td><a href="./position/relative.html">Open</a></td>
+                        <td><a class="custom-btn" href="./position/relative.html">Open</a></td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>Fixed</td>
                         <td>Stays fixed relative to viewport</td>
-                        <td><a href="./position/fixed.html">Open</a></td>
+                        <td><a class="custom-btn" href="./position/fixed.html">Open</a></td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>Absolute</td>
                         <td>Positioned relative to nearest positioned parent</td>
-                        <td><a href="./position/absolute.html">Open</a></td>
+                        <td><a class="custom-btn" href="./position/absolute.html">Open</a></td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>Flex</td>
                         <td>Modern layout system for alignment</td>
-                        <td><a href="./display/flex.html">Open</a></td>
+                        <td><a class="custom-btn" href="./display/flex.html">Open</a></td>
                     </tr>
                 </tbody>
             </table>
 
-            <a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; 
-    transition: 0.2s" class="active" href="../resources.html" target="_self" title="Sample Testimonials">Back</a>
+            <!-- <a class="active custom-btn" href="../resources.html" target="_self" title="Sample Testimonials">Back</a> -->
         </section>
     </main>
 
-    <br><br><br><br><br><br><br><br><br><br>
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p style="text-align: center;">© 2026 Tahmina Akter. All rights reserved.</p>
+        © 2026 Tahmina Akter. All rights reserved.
     </footer>
 
 </body>

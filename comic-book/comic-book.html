@@ -1,59 +1,44 @@
-<!DOCTYPE html> <!-- tells the browser this is HTML5 -->
-<html> <!-- root of your webpage -->
+<!DOCTYPE html>
+<html>
 
-<head> <!-- This part is not visible on the page. It configures your site. -->
-    <meta charset="utf-8"> <!-- Supports all characters -->
-    <meta name="description" content="Fundamentals of HTML and CSS"> <!-- Helps SEO -->
-    <title>Comic Book</title> <!-- Shows in browser tab -->
-    <!-- displays site properly based on user's device -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fundamentals of HTML and CSS">
+    <title>Comic Book</title>
+
     <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico">
     <link rel="stylesheet" href="./comic-book-style.css">
 </head>
 
 <body>
 
-    <main>
+<main>
 
-        <section id="comic">
+    <section id="comic">
 
-            <h1>Animation Comic Book</h1>
+        <h1>Animation Comic Book</h1>
 
-            <!-- flex container -->
-            <div class="row" id="row-1">
-                <!-- flex items  -->
-                <div class="panel">
-                    <div class="dialogue">Knock <mark>Knock!</mark></div>
-                </div>
-                <div class="panel">
-                    <div class="dialogue">Who's there?</div>
-                </div>
-                <div class="panel">
-                    <div class="dialogue">Pika</div>
-                </div>
-            </div>
+        <!-- Row 1 -->
+        <div class="row" id="row-1">
+            <div class="panel"><div class="dialogue">Knock <mark>Knock!</mark></div></div>
+            <div class="panel"><div class="dialogue">Who's there?</div></div>
+            <div class="panel"><div class="dialogue">Pika</div></div>
+        </div>
 
-            <!-- flex container -->
-            <div class="row" id="row-2">
-                <!-- flex items  -->
-                <div class="panel">
-                    <div class="dialogue">Pika who?</div>
-                </div>
-                <div class="panel">
-                    <div class="dialogue">Pikaboo!</div>
-                </div>
-                <div class="panel">
-                    <div class="dialogue">Let’s go, Pikachu!</div>
-                </div>
-            </div>
+        <!-- Row 2 -->
+        <div class="row" id="row-2">
+            <div class="panel"><div class="dialogue">Pika who?</div></div>
+            <div class="panel"><div class="dialogue">Pikaboo!</div></div>
+            <div class="panel"><div class="dialogue">Let’s go, Pikachu!</div></div>
+        </div>
 
-        </section>
-        <br>
+    </section>
 
-        <a style=" text-decoration: none; background: #3498db; color: white; padding: 6px 12px; border-radius: 6px; font-size: 14px; 
-    transition: 0.2s" class="active" href="../resources.html" target="_self" title="Sample Testimonials">Back</a>
-    </main>
+    <br>
 
+    <a class="custom-btn" href="../resources.html">Back</a>
+
+</main>
 
 </body>
-
 </html>
