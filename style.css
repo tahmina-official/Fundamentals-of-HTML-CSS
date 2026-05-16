@@ -1,16 +1,28 @@
-/* ============ GLOBAL SETTING ============ */
+/* ============ GLOBAL RESET ============ */
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* ============ BASE STYLES ============ */
 body {
-    margin: 10px;
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
 }
 
-/* =============== HEADINGS =============== */
+/* Main takes remaining space (sticky footer) */
+main {
+    flex: 1;
+    padding: 15px;
+}
+
+/* ============ HEADINGS ============ */
 h1 {
     color: rgb(86, 34, 155);
 }
@@ -19,86 +31,68 @@ h2 {
     color: rgb(1, 57, 1);
 }
 
-/* =============== PARAGRAPH =============== */
+/* ============ PARAGRAPH ============ */
 p {
     background-color: rgb(182, 180, 180);
-    padding: 5px;
+    padding: 8px;
     color: #520101;
+    border-radius: 4px;
 }
 
+/* ============ TABLE ============ */
 table {
-    margin: 5px 0;
-    /* 5px → top and bottom margin; 0 → left and right margin */
+    margin: 10px 0;
     padding: 6px;
-    font-size: 30px;
+    font-size: clamp(14px, 2.5vw, 30px);
     text-align: center;
+    width: 100%;
 }
 
-/* ================= NAVBAR ================= */
+/* ============ NAVBAR ============ */
 ul {
     display: flex;
-    /* Horizontal layout */
+    flex-wrap: wrap;
     list-style: none;
-    margin: 0;
-    padding: 0;
     background-color: #333;
 }
 
+/* Push last item to right */
 li:last-child {
-    border-right: none;
     margin-left: auto;
-    /* pushes login to right */
 }
 
 li a {
     display: flex;
+    align-items: center;
     color: white;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
+/* Hover */
 li a:hover {
     background-color: #111;
 }
 
+/* Active link */
 li a.active {
     background-color: #04AA6D;
 }
 
-/* ============== LOGIN ICON ============== */
+/* Login icon */
 .login-user {
     height: 1em;
-    /* Makes icon same size as text */
     margin-right: 0.5em;
-
 }
 
-/* LIST COLORS (Targets specific list items)  */
-
-li:nth-child(1) {
-    color: rgb(2, 2, 67);
-}
-
-li:nth-child(2) {
-    color: rgb(2, 68, 2);
-}
-
-/* =============== SECTIONS =============== */
-section {
-    margin-bottom: 30px;
-}
-
-section p:first-of-type {
-    background: lightgreen;
-}
-
-/* ============= FORM STYLING ============= */
+/* ============ FORM ELEMENTS ============ */
 input,
 select {
-    margin: 5px 0;
-    /* 5px → top and bottom margin; 0 → left and right margin */
-    padding: 6px;
+    width: 100%;
+    max-width: 400px;
+    margin: 6px 0;
+    padding: 8px;
     font-size: 14px;
 }
 
@@ -114,23 +108,99 @@ legend {
 
 label {
     font-size: 14px;
-    margin-top: 10px;
 }
 
-/* ============= BUTTONS ============= */
+/* Buttons */
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    padding: 8px 12px;
+    padding: 10px 14px;
     margin: 5px 3px;
     cursor: pointer;
+    border-radius: 8px;
+    background-color: #b00404;
+    color: #fff;
+    border: none;
 }
 
+/* ============ BUTTON LINK ============ */
+.custom-btn {
+    text-decoration: none;
+    background: #3498db;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
 
-/* ================= FOOTER ================= */
-footer {
+.custom-btn:hover {
+    background: #1d6fa5;
+}
+
+/* ============ CARD DESIGN ============ */
+.card-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    background: #f2f2f2;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.card-box:hover {
+    transform: translateY(-5px);
+}
+
+/* ============ FOOTER ============ */
+footer {
+    background: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px;
+    margin-top: auto;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .row {
+        gap: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    ul {
+        flex-direction: column;
+    }
+
+    li:last-child {
+        margin-left: 0;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+    main {
+        padding: 10px;
+    }
+
+    .card-box {
+        padding: 15px;
+    }
+
+    li a {
+        padding: 12px;
+    }
 }
